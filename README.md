@@ -33,8 +33,8 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
-4. Upload the docker image to your Docker hub: ./upload_docker.sh
-5. Delete Kubernetes Pods kubectl delete pods <PodName>
+4. Upload the docker image to your Docker hub: ```./upload_docker.sh```
+5. Delete Kubernetes Pods ```kubectl delete pods <PodName>```
 
 ### Kubernetes Steps
 
