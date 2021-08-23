@@ -14,7 +14,7 @@ jobs:
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/postgres:9.4
-    working_directory: ~/repo
+    working_directory: ~/flask-sklearn
     steps:
       - checkout
       # Download and cache dependencies
@@ -34,12 +34,12 @@ jobs:
             chmod +x /bin/hadolint
       - save_cache:
           paths:
-            - ./venv
+            - ./devops
           key: v1-dependencies-{{ checksum "requirements.txt" }}
         
       # run lints!
       - run:
           name: run lint
           command: |
-            . venv/bin/activate
+            .devops/bin/activate
             make lint
