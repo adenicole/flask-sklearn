@@ -33,10 +33,13 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
+4. Upload the docker image to your Docker hub: ./upload_docker.sh
+5. Delete Kubernetes Pods kubectl delete pods <PodName>
 
 ### Kubernetes Steps
 
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+* Setup and Configure Docker locally by using ```docker build -t myapp . ```
+* Setup and Configure Kubernetes locally by using ```minikube start```
+* Create Flask app in Container by using ```./run_docker.sh```
+* Run via kubectl using ```./run_kubernetes.sh```
+* Delete Kubernetes cluster using ```minikube delete``` 
