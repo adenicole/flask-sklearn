@@ -43,3 +43,12 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Create Flask app in Container by using ```./run_docker.sh```
 * Run via kubectl using ```./run_kubernetes.sh```
 * Delete Kubernetes cluster using ```minikube delete``` 
+
+### Files added
+`.circleci/config.yml` - To run an automated successful build
+`output_txt_files` - Updated the logs from docker and kubernetes
+`app.py` - Corrected the f-string interpolation for the python app
+`Dockerfile` - Completed the steps for Docker configuration
+`requirement` - Added pylint to make lint pass
+`upload_docker.sh` Completed shell script to uload image to docker hub
+
