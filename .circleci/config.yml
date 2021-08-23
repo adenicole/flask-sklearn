@@ -23,7 +23,7 @@ jobs:
             
       - save_cache:
           paths:
-            - ./ML-microservice-api
+            - ./devops
           key: v1-dependencies-{{ checksum "requirements.txt" }}
             
       - run:
