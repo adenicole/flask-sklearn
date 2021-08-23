@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: circleci/python:3.7.3-stretch
       
-    working_directory: ~/flask-sklearn
+    working_directory: ~/devops
     
     steps:
       - checkout
@@ -16,7 +16,6 @@ jobs:
       - run:
           name: Install dependencies
           command: |
-            #which python3
             make setup
             source ~/.devops/bin/activate
             make install
